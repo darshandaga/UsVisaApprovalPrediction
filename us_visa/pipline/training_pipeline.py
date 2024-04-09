@@ -3,15 +3,15 @@ from us_visa.exception import USvisaException
 from us_visa.logger import logging
 
 from us_visa.components.data_ingestion import DataIngestion
-from us_visa.entity.artifact_entity import (DataIngestionArtifact)
-from us_visa.entity.config_entity import (DataIngestionConfig)
+from us_visa.entity.artifact_entity import DataIngestionArtifact
+from us_visa.entity.config_entity import DataIngestionConfig
 
 
 class TrainPipeline:
     def __init__(self):
         self.data_ingestion_config = DataIngestionConfig()
 
-def start_data_ingestion(self) -> DataIngestionArtifact:
+    def start_data_ingestion(self) -> DataIngestionArtifact:
         """
         This method of TrainPipeline class is responsible for starting data ingestion component
         """
@@ -29,7 +29,7 @@ def start_data_ingestion(self) -> DataIngestionArtifact:
             raise USvisaException(e, sys) from e
         
 
-def run_pipeline(self, ) -> None:
+    def run_pipeline(self, ) -> None:
         """
         This method of TrainPipeline class is responsible for running complete pipeline
         """
