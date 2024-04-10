@@ -14,8 +14,6 @@ class DataValidationArtifact:
     message: str
     drift_report_file_path: str
 
-    
-'''
 
 @dataclass
 class DataTransformationArtifact:
@@ -23,6 +21,8 @@ class DataTransformationArtifact:
     transformed_train_file_path:str
     transformed_test_file_path:str
 
+
+'''
 
 @dataclass
 class ClassificationMetricArtifact:
