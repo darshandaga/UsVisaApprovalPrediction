@@ -22,8 +22,6 @@ class DataTransformationArtifact:
     transformed_test_file_path:str
 
 
-'''
-
 @dataclass
 class ClassificationMetricArtifact:
     f1_score:float
@@ -38,7 +36,7 @@ class ModelTrainerArtifact:
     metric_artifact:ClassificationMetricArtifact
 
 
-
+'''
 @dataclass
 class ModelEvaluationArtifact:
     is_model_accepted:bool
